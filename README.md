@@ -1,8 +1,8 @@
-# DMGD: Train-Free Dataset Distillation with Semantic-Distribution Matching in Diffusion Models
-**CVPR 2026**
+# [CVPR 2026] DMGD: Train-Free Dataset Distillation with Semantic-Distribution Matching in Diffusion Models
+
 
 [![arXiv](https://img.shields.io/badge/arXiv-260X.XXXXXX-b31b1b.svg)](https://arxiv.org/abs/260X.XXXXXX)
-[![CVPR](https://img.shields.io/badge/CVPR-2026-blue.svg)]([https://cvpr.thecvf.com/](https://cvpr.thecvf.com/virtual/2026/poster/36526))
+[![CVPR](https://img.shields.io/badge/CVPR-2026-blue.svg)](https://cvpr.thecvf.com/virtual/2026/poster/36526)
 ![DMGD Framework](images/DMGD.png)
 > **Official Implementation** of Dual Matching Guided Diffusion (DMGD), a training-free diffusion-based dataset distillation framework, outperforming state-of-the-art fine-tuning methods on ImageNet-1K and its subsets.
 
