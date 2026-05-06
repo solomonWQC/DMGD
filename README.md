@@ -37,11 +37,14 @@ table1 shows the comparison results between our method and state-of-the-art meth
 ## 📝 Citation
 If you find our work useful in your research, please cite our paper:
 ```bibtex
-@inproceedings{wang2026dmgd,
-  title={DMGD: Train-Free Dataset Distillation with Semantic-Distribution Matching in Diffusion Models},
-  author={Wang, Qichao and Lu, Yunhong and Cao, Hengyuan and Zhang, Junyi and Zhang, Min},
-  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
-  year={2026}
+@misc{wang2026dmgdtrainfreedatasetdistillation,
+      title={DMGD: Train-Free Dataset Distillation with Semantic-Distribution Matching in Diffusion Models}, 
+      author={Qichao Wang and Yunhong Lu and Hengyuan Cao and Junyi Zhang and Min Zhang},
+      year={2026},
+      eprint={2605.03877},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2605.03877}, 
 }
 ```
 
