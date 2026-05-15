@@ -45,6 +45,7 @@ python sample.py \
 - `--num-samples`: Total number of samples to generate (IPC)
 - `--guidance-scale`: guidance scale for distribution matching
 - `--data_path`: Path to your training dataset directory
+
 For more hyperparameter settings, please refer to [sample.py](./sample.py).
 
 ## 3. Evaluation
@@ -111,7 +112,7 @@ If you find our work useful in your research, please cite our paper:
 We thank the contributors of the following open-source projects:
 - [DiT](https://github.com/facebookresearch/DiT)
 - [diffusers](https://github.com/huggingface/diffusers)
-- [Minimax-DD](https://github.com/vimar-gu/MinimaxDiffusion)
+- [Minimax](https://github.com/vimar-gu/MinimaxDiffusion)
 
 
 ---
