@@ -6,8 +6,6 @@
 ![DMGD Framework](images/DMGD.png)
 > **Official Implementation** of Dual Matching Guided Diffusion (DMGD), a training-free diffusion-based dataset distillation framework, outperforming state-of-the-art fine-tuning methods on ImageNet-1K and its subsets.
 
-### Code Release Note
-**Full code will be released before the CVPR 2026 conference**
 
 ## ✨ Key Highlights
 - **🚀 Fully Training-Free**: Introduces guidance only during the diffusion sampling process, requiring no additional fine-tuning or training stages, delivering orders of magnitude higher computational efficiency
