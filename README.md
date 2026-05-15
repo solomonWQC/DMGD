@@ -16,6 +16,67 @@
 - **📊 Optimal Transport Distribution Alignment**: Designs a distribution matching loss based on optimal transport theory, and proposes two acceleration strategies (Distribution Approximate Matching, Greedy Progressive Matching) for efficient global distribution structure alignment
 Our complete framework is illustrated in fig2.
 
+# 🚀 Quick Start
+
+## 1. Environment Setup
+
+First, follow the instructions in the [Minimax](https://github.com/vimar-gu/MinimaxDiffusion) to install all required dependencies and set up the development environment.
+
+After environment configuration, download the pre-trained DiT and VAE weights and place them in the `pretrained_models/` directory.
+
+## 2. Sampling
+
+Run the following command to generate surrogate datasets using DMGD:
+
+```bash
+python sample.py \
+    --model DiT-XL/2 \
+    --image-size 256 \
+    --save-dir Your_path \
+    --spec nette \
+    --ckpt pretrained_models/DiT-XL-2-256x256.pt \
+    --num-samples 50 \
+    --guidance-scale 0.05 \
+    --data_path Dataset_Path/train
+```
+
+**Parameter Explanation:**
+- `--save-dir`: Directory to save generated images
+- `--spec`: Name of target dataset
+- `--ckpt`: Path to the pre-trained DiT checkpoint file
+- `--num-samples`: Total number of samples to generate (IPC)
+- `--guidance-scale`: guidance scale for distribution matching
+- `--data_path`: Path to your training dataset directory
+For more hyperparameter settings, please refer to [sample.py](./sample.py).
+
+## 3. Evaluation
+
+To evaluate the model performance, run the following command:
+
+```bash
+python train.py \
+    -d imagenet \
+    --imagenet_dir Your_Results_Path Dataset_Path \
+    -n resnet_ap \
+    --nclass 10 \
+    --norm_type instance \
+    --ipc 50 \
+    --tag test \
+    --slct_type random \
+    --spec nette
+```
+
+**Parameter Explanation:**
+- `--imagenet_dir`: Paths to your results directory and dataset directory
+- `--n`: Evaluation Network
+- `--nclass`: Number of classes in your dataset
+- `--ipc`: Images per class for evaluation
+- `--spec`: Name of target dataset
+---
+
+**Note:** Replace all placeholders (`Your_path`, `Dataset_Path`, `Your_Results_Path`) with your actual directory paths before executing the commands.
+
+
 ## 📊 Experimental Results
 ### Performance Comparison on ImageNet Subsets (Hard-label Protocol, ResNet10-AP Top-1 Accuracy)
 table1 shows the comparison results between our method and state-of-the-art methods on ImageNet-Woof and ImageNet-Nette. Our method achieves the best performance under all IPC settings and can be used as a plug-and-play module to improve the performance of existing methods.
