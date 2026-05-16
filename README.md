@@ -14,7 +14,7 @@
 - **📊 Optimal Transport Distribution Alignment**: Designs a distribution matching loss based on optimal transport theory, and proposes two acceleration strategies (Distribution Approximate Matching, Greedy Progressive Matching) for efficient global distribution structure alignment
 Our complete framework is illustrated in fig2.
 
-# 🚀 Quick Start
+## 🚀 Quick Start
 
 ## 1. Environment Setup
 
