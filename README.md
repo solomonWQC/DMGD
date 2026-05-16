@@ -16,13 +16,13 @@ Our complete framework is illustrated in fig2.
 
 ## 🚀 Quick Start
 
-## 1. Environment Setup
+### 1. Environment Setup
 
 First, follow the instructions in the [Minimax](https://github.com/vimar-gu/MinimaxDiffusion) to install all required dependencies and set up the development environment.
 
 After environment configuration, download the pre-trained DiT and VAE weights and place them in the `pretrained_models/` directory.
 
-## 2. Sampling
+### 2. Sampling
 
 Run the following command to generate surrogate datasets using DMGD:
 
@@ -48,7 +48,7 @@ python sample.py \
 
 For more hyperparameter settings, please refer to [sample.py](./sample.py).
 
-## 3. Evaluation
+### 3. Evaluation
 
 To evaluate the model performance, run the following command:
 
